@@ -1,0 +1,514 @@
+{
+  "id": "8a914e8b-3a64-4db1-9d4c-bc7f8901aadb",
+  "version": "2.0",
+  "name": "LKSHEDULE",
+  "url": "https://lk.gubkin.ru/schedule/",
+  "tests": [{
+    "id": "ec5ce29e-51ba-4c75-bdba-fbcd442e9dc1",
+    "name": "facultyTab",
+    "commands": [{
+      "id": "c99840c7-06d5-47e9-8547-e633f4ece2b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://lk.gubkin.ru/schedule/#/activities/faculties",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3bd8875-7ddd-4c3b-b902-2b80797295a1",
+      "comment": "",
+      "command": "echo",
+      "target": "1. Вкладка факультеты открывается",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f6e1fd4-aa6b-4164-a94e-0ba188c33051",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "589213f6-2237-4cca-9f11-9bd3878bc8dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cp-input-box > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-box > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9548e04e-40ab-41fb-bb31-5ab7cd3b473f",
+      "comment": "",
+      "command": "echo",
+      "target": "2. Выпадающий список работает, в него приходят значения",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce55e226-4672-40e1-ba59-86b0493f2562",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Комплексной безопасности топливно-энергетического комплекса"
+    }, {
+      "id": "8b807787-3b67-40f1-bf7e-7aea0ea16d72",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "8b450249-5bc4-494f-8070-74b78c637790",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d5d40cd-3f86-420f-8646-7231bf8df986",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'КБ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "cb797ff8-a477-4bb9-b1e7-13855086f384",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Инженерной механики"
+    }, {
+      "id": "0588e8b1-bcc7-4e37-b977-4432956b83e3",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "31ca093a-8277-4070-b106-efe74eab73c4",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3e44f3b-d86d-43b6-a524-361badf1cfb7",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'МА')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "8c0eabf1-d8db-4371-be34-d699f85ccc59",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Разработки нефтяных и газовых месторождений"
+    }, {
+      "id": "82df2422-1e8c-45bf-9fcf-40f6d9e64393",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f675f4af-0e62-4ee1-bbb5-8706f25dc49c",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40d51f63-51b3-41ae-83ab-6e41a4edde7b",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'РБ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "008db72a-0c56-4ba4-87a0-12776598b1c9",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Проектирования, сооружения и эксплуатации систем трубопроводного транспорта"
+    }, {
+      "id": "d6ebb9bf-c065-4e59-ac76-dd504b053762",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "769365dd-f9d2-4b62-a7ca-1047a108ea18",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e67614-dbdd-4081-bde4-dcd300f54e5a",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ТА')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "bd8f59a9-fb3a-443f-be07-f7d73d099b2c",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Автоматики и вычислительной техники"
+    }, {
+      "id": "c3289d87-ca74-4390-985a-fad1f1b54722",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c2b1fcfd-fc60-490f-9dd7-e8bb19f3fbf6",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a29be3a-9aa8-462e-bee5-ac7a1f49db05",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'АИ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "2739b8e5-85e0-4f3e-b459-fb24684a5ae1",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Химической технологии и экологии"
+    }, {
+      "id": "913501ae-96eb-42d3-80e8-8170e6276425",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "dd6161b6-bc1b-4cd2-b18b-66973a6e652a",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89d0798a-5f25-4b53-add7-bc4504acf500",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ХТ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "dbcb4e2b-8b11-4d3c-8e42-c59896bd8159",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Экономики и управления"
+    }, {
+      "id": "519d9669-a3e8-4301-b292-cbe4a8b685a4",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "ff01e22c-a258-4a8b-a5c8-1ba4de92411d",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96b83ddf-0c5d-455c-9e23-373a2d7b2fdb",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ЭЭ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e3e5eba3-d313-4fed-a0c4-82da134bed67",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Юридический"
+    }, {
+      "id": "fc88d479-b45f-4b16-9288-3192ecc8b927",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c4ce480a-9371-45b3-a51f-9b4cea0efae0",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fe850b1-0f76-4fe6-85cc-6dda611c33ca",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ЮР')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "ebfc98b2-877a-4af1-b067-6a0a33e9ae06",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Гуманитарного образования"
+    }, {
+      "id": "50ba8f8a-1fd5-49b9-adc8-a08fa133659f",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f65c78b0-2da3-4c34-b9b2-a72651ed2c13",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c75f0de3-acbb-47af-8057-8e10a9ac32b5",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ВРМ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "4f6581b3-2ced-4fdf-9ad0-df325975a33e",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Геологии и геофизики нефти и газа"
+    }, {
+      "id": "4ff82501-d71e-41ad-bbc3-4936a646c2a3",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "43efa81e-a5a1-49b7-bef9-497f564aa70a",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3e78403-a3a1-4a33-8fdd-892d435167e0",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ГР')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "70c8531f-2b43-41be-919a-92d8965bcd05",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Управление вечернего и заочного образования"
+    }, {
+      "id": "5ff82616-626c-44e0-b8aa-e750719df308",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "87611874-8e73-474a-aa20-6e7381ebe333",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=филиал РГУ нефти и газа (НИУ) имени И.М. Губкина в г. Оренбурге"
+    }, {
+      "id": "25b65c76-500d-4cdb-9a77-00801e10aab2",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d7d35be5-3aa7-490d-a989-fa741c13a62e",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fffd86f-0709-47bd-b14e-ab76a34e5b14",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ОРГ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "11291ab7-3022-40e4-a55e-0fc92b57fc83",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=филиал РГУ нефти и газа (НИУ) имени И.М. Губкина в г. Ташкенте (Республика Узбекистан)"
+    }, {
+      "id": "cc5a8e37-e211-4e20-996e-09530d834719",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9bdcee06-c9e6-413f-9ec7-c9bddd976344",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb5753cf-fcbf-4014-ba9a-658ad61f144a",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'УРГ')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "3040036e-6dec-4b15-9854-ae0e216ba8de",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Центр инновационных компетенций"
+    }, {
+      "id": "8a85ccd0-6481-40cb-9db9-a68626a6e6b3",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [
+        ["css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0", "css:finder"],
+        ["xpath=//label[2]/select", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "7ad2a0df-1299-48fa-a830-94b2bb5766b9",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cp-input-box:nth-child(1) > .ng-tns-c1-0",
+      "targets": [],
+      "value": "label=Научно-педагогических кадров и кадров высшей квалификации"
+    }, {
+      "id": "54da8ca3-f3d5-4b67-be30-55d3e8739952",
+      "comment": "Проверка появления поля для выбора группы",
+      "command": "waitForElementPresent",
+      "target": "css=.cp-input-row > .ng-tns-c1-0 > .ng-tns-c1-0",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "39ef1eb7-dc02-4995-b1f2-383a88df0ba5",
+      "comment": "Начать Выбор из списка групп",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .ng-tns-c1-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78ee5a99-b7bc-4330-8801-06aac74dcb5b",
+      "comment": "Проверка группы",
+      "command": "waitForElementPresent",
+      "target": "xpath=//option[contains(.,'ВТА')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e71d7aa3-f0ad-494b-8832-6f05af8e5b6a",
+      "comment": "",
+      "command": "echo",
+      "target": "3. Подгрузились Все факультеты И для них появляется возможность выбора группы И проверены конкретные группы ( не проверяется ЦИК, ВЕЧЕРКА)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7454f630-db60-480d-82f9-edd5bd8091c9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Группа')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "739c46d6-cb06-4bbe-885a-57cdb3669bb7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec5ce29e-51ba-4c75-bdba-fbcd442e9dc1"]
+  }, {
+    "id": "a2eb2282-8814-470f-bdff-20d16e4a8f22",
+    "name": "lkShedule",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec5ce29e-51ba-4c75-bdba-fbcd442e9dc1"]
+  }],
+  "urls": ["https://lk.gubkin.ru/schedule/"],
+  "plugins": []
+}
